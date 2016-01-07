@@ -303,11 +303,13 @@
 					indicators: true //是否显示滚动条
 					
 				});
-				var html2 = "<li class='mui-table-view-cell'><div class='mui-table'><div class='mui-table-cell mui-col-xs-10'><h4 class='mui-ellipsis'>1号楼2单元1004</h4><h5><span>投诉人：</span><span>王五</span></h5><p class='mui-h6 mui-ellipsis'>窗户漏风，这是怎么回事，赶快来修！</p></div><div class='mui-table-cell mui-col-xs-2 mui-text-right'><span class='mui-h5'>2016-1-6 12:25</span></div></div></li>"
-				+"<li class='mui-table-view-cell'><div class='mui-table'><div class='mui-table-cell mui-col-xs-10'><h4 class='mui-ellipsis'>1号楼2单元1004</h4><h5><span>投诉人：</span><span>王五</span></h5><p class='mui-h6 mui-ellipsis'>窗户漏风，这是怎么回事，赶快来修！</p></div><div class='mui-table-cell mui-col-xs-2 mui-text-right'><span class='mui-h5'>2016-1-6 12:25</span></div></div></li>"
-				+"<li class='mui-table-view-cell'><div class='mui-table'><div class='mui-table-cell mui-col-xs-10'><h4 class='mui-ellipsis'>1号楼2单元1004</h4><h5><span>投诉人：</span><span>王五</span></h5><p class='mui-h6 mui-ellipsis'>窗户漏风，这是怎么回事，赶快来修！</p></div><div class='mui-table-cell mui-col-xs-2 mui-text-right'><span class='mui-h5'>2016-1-6 12:25</span></div></div></li>"
-				+"<li class='mui-table-view-cell'><div class='mui-table'><div class='mui-table-cell mui-col-xs-10'><h4 class='mui-ellipsis'>1号楼2单元1004</h4><h5><span>投诉人：</span><span>王五</span></h5><p class='mui-h6 mui-ellipsis'>窗户漏风，这是怎么回事，赶快来修！</p></div><div class='mui-table-cell mui-col-xs-2 mui-text-right'><span class='mui-h5'>2016-1-6 12:25</span></div></div></li>";
+				var html2 = "<li class='mui-table-view-cell'><div class='mui-table'><div class='mui-table-cell mui-col-xs-10'><h4 class='mui-ellipsis'>1号楼2单元1004</h4><h5><span>投诉人：</span><span>王五</span></h5><p class='mui-h6 mui-ellipsis'>窗户漏风，这是怎么回事，赶快来修！</p></div><div class='mui-table-cell mui-col-xs-2 mui-text-right'><span class='mui-h5'>2016-1-6</span></div></div></li>";
 				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+				for(var i=0;i<3;i++){
+					html2+=html2;
+				}
+				
+				html3=html2;
 				var item2 = document.getElementById('item2mobile');
 				var item3 = document.getElementById('item3mobile');
 				document.getElementById('slider').addEventListener('slide', function(e) {
