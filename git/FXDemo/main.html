@@ -338,11 +338,11 @@
 				var item3 = document.getElementById('item3mobile');
 				document.getElementById('slider').addEventListener('slide', function(e) {
 					if (e.detail.slideNumber === 1) {
-						console.log('1');
+//						console.log('1');
 						if (item2.querySelector('.mui-loading')) {
 							setTimeout(function() {
 								item2.querySelector('.mui-scroll').innerHTML = html2;
-								console.log(html2);
+//								console.log(html2);
 							}, 500);
 						}
 					} else if (e.detail.slideNumber === 2) {
